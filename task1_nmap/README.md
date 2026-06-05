@@ -22,8 +22,6 @@ See `nmap_scan.txt` for full output. Key findings:
 
 | Port | State | Service | Version |
 |------|-------|---------|---------|
-| 22   | open  | SSH     | OpenSSH 8.x |
-| (add your actual findings here) | | | |
 
 ## Key Takeaway
 Even on a development machine, unexpected open ports can be an attack surface. This scan helps establish a baseline of what services should and should not be running.
