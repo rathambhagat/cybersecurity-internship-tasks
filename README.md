@@ -1,4 +1,3 @@
----
 <p align="center">
  <img src="assets/oasis_logo.png" alt="Oasis Infobyte Logo" width="200"/>
 </p>
@@ -11,13 +10,13 @@
  <img src="https://img.shields.io/badge/Tool-Wireshark-purple?style=for-the-badge" />
  <img src="https://img.shields.io/badge/OS-Ubuntu%2022.04-yellow?style=for-the-badge&logo=ubuntu" />
 </p>
----
 ## About
-This repository documents my hands-on work during the **Security Analyst Internship** at **Oasis Infobyte**.
-Each task covers a core cybersecurity skill — network reconnaissance, firewall hardening, web vulnerability scanning, and t
-**Intern:** Ratham Bhagat
-**Role:** Security Analyst Intern
-**Internship Period:** June 2025
+
+This repository documents my hands-on work during the **Security Analyst Internship** at **Oasis Infobyte**. Each task covers a core cybersecurity skill — network reconnaissance, firewall hardening, web vulnerability scanning, and traffic analysis.
+
+**Intern:** Ratham Bhagat  
+**Role:** Security Analyst Intern  
+**Internship Period:** June 2025  
 **Platform:** WSL Ubuntu 22.04 + Neovim (LazyVim)
 ---
 ## Tasks
