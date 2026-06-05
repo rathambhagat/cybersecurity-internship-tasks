@@ -23,10 +23,10 @@ Each task covers a core cybersecurity skill — network reconnaissance, firewall
 ## Tasks
 | # | Task | Tool | Description | Folder |
 |---|------|------|-------------|--------|
-| 1 | Network Scanning | Nmap | Scanned localhost to identify open ports and running services | [task1_nmap](./task1_nmap/)
-| 2 | Firewall Configuration | UFW / iptables | Configured host-based firewall rules for basic hardening | [task2_ufw](./ta
-| 7 | Vulnerability Scanning | Nikto | Ran a web server vulnerability scan against a local target | [task7_nikto](./task7_n
-| 8 | Packet Capture & Analysis | tshark / Wireshark | Captured live network traffic and filtered HTTP packets | [task8_wir
+| 1 | Network Scanning | Nmap | Scanned localhost to identify open ports and running services | [task1_nmap](./task1_nmap/) |
+| 2 | Firewall Configuration | UFW / iptables | Configured host-based firewall rules for basic hardening | [task2_ufw](./task2_ufw/) |
+| 7 | Vulnerability Scanning | Nikto | Ran a web server vulnerability scan against a local target | [task7_nikto](./task7_nikto/) |
+| 8 | Packet Capture & Analysis | tshark / Wireshark | Captured live network traffic and filtered HTTP packets | [task8_wireshark](./task8_wireshark/) |
 ---
 ## Skills Demonstrated
 - Network port and service enumeration
