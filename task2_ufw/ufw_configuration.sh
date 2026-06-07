@@ -7,8 +7,7 @@ sudo ufw default allow outgoing
 
 # Allow essential ports
 sudo ufw allow 22/tcp comment 'SSH'
-sudo ufw allow 80/tcp comment 'HTTP'
-sudo ufw allow 443/tcp comment 'HTTPS'
+sudo ufw deny 80/tcp comment 'HTTP'
 
 # Enable and check status
 sudo ufw enable
