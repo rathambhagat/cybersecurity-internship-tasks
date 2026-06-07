@@ -1,7 +1,8 @@
 # Task 2 – Firewall Configuration with UFW
 
 ## Objective
-Configure a host-based firewall using UFW (Uncomplicated Firewall) on Ubuntu to enforce a default-deny policy while allowing only necessary services.
+Set up a basic firewall using UFW (Uncomplicated Firewall) on a Linux system. Configure the firewall to allow SSH and deny HTTP traffic.
+
 ## Environment
 - OS: Ubuntu 22.04 (WSL2)
 - Tool: UFW (Uncomplicated Firewall)
@@ -13,8 +14,7 @@ Configure a host-based firewall using UFW (Uncomplicated Firewall) on Ubuntu to 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow 22/tcp comment 'SSH'
-sudo ufw allow 80/tcp comment 'HTTP'
-sudo ufw allow 443/tcp comment 'HTTPS'
+sudo ufw deny 80/tcp comment 'Deny HTTP'
 sudo ufw enable
 sudo ufw status verbose | tee ufw_status.txt
 ```
@@ -22,14 +22,13 @@ sudo ufw status verbose | tee ufw_status.txt
 ## Firewall Rules Configured
 
 | Port | Protocol | Policy | Reason |
-|------|----------|--------|--------|
-| Default | All     | DENY IN | Block all unsolicited traffic |
-| 22   | TCP      | ALLOW  | Secure shell access |
-| 80   | TCP      | ALLOW  | Web traffic (HTTP) |
-| 443  | TCP      | ALLOW  | Web traffic (HTTPS) |
+| :--- | :--- | :--- | :--- |
+| Default | All | DENY IN | Block all unsolicited traffic |
+| 22 | TCP | ALLOW | Secure shell access required for remote management |
+| 80 | TCP | DENY | Explicitly block unencrypted web traffic per task requirements |
 
 ## Key Takeaway
-A default-deny firewall policy is one of the most impactful, low-cost hardening measures for any Linux host. It ensures that only explicitly permitted traffic can reach open services.
+Configuring explicit block rules (like denying port 80) alongside a default-deny policy ensures that legacy or insecure protocols cannot be accidentally exposed, forcing secure connections (like SSH).
 
 ## Screenshots
 ![UFW install](images/01_ufw_install.png)
@@ -40,6 +39,8 @@ A default-deny firewall policy is one of the most impactful, low-cost hardening 
 ```bash
 sudo apt install ufw
 sudo ufw default deny incoming && sudo ufw default allow outgoing
-sudo ufw allow 22/tcp && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp && sudo ufw deny 80/tcp
 sudo ufw enable && sudo ufw status verbose
+```
+
 ```
