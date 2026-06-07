@@ -12,7 +12,7 @@
 </p>
 
 ## About
-This repository documents my hands-on work during the **Security Analyst Internship** at **Oasis Infobyte**. Each task covers a core cybersecurity skill — network reconnaissance, firewall hardening, web vulnerability scanning, and traffic analysis.
+This repository documents my hands-on work during the **Security Analyst Internship** at **Oasis Infobyte**. Each task covers a core cybersecurity skill network reconnaissance, firewall hardening, web vulnerability scanning, and traffic analysis.
 **Intern:** Pratham Bhagat  
 **Role:** Security Analyst Intern  
 **Internship Period:** June 2025 
