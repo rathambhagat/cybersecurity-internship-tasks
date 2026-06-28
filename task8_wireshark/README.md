@@ -24,7 +24,7 @@ Filtering the raw `.pcap` file for `http` successfully isolated the exact traffi
 Analyzing raw packet captures represents the ground truth of network security. While system logs can be incomplete or manipulated, capturing packets directly off the wire shows exactly what data left the machine and what came back. Capturing unencrypted HTTP traffic practically demonstrates how easily data can be intercepted in transit without SSL/TLS encryption.
 
 ## Deliverables
-- ![Raw packet capture file securely saved](`capture.pcap`)
+- Raw packet capture file securely saved in the capture.pcap
 - [Filtered traffic screenshot saved]('images/01_http_request.png')
 
 ## Videos
