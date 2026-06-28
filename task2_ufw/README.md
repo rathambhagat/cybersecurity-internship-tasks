@@ -35,6 +35,8 @@ Configuring explicit block rules (like denying port 80) alongside a default-deny
 ![Rules added](images/02_rules_added.png)
 ![UFW status](images/03_ufw_status.png)
 
+## Videos 
+![ufw Video](vidoes/ufwTask2.mp4)
 ## How to Reproduce
 ```bash
 sudo apt install ufw
